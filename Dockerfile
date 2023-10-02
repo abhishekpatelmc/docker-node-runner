@@ -9,7 +9,8 @@ RUN apt-get update \
     && curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
     && apt-get install -y nodejs \
     && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && npm install -g npm@10.1.0
 
 # Expose a port (replace 8080 with the desired port number)
 EXPOSE 8080

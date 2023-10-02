@@ -27,7 +27,7 @@ docker build -t code-runner .
 - Run the image
 
 ```bash
-docker run  --name workspace -p 8080:8080 -it code-runner
+docker run --name workspace -p 8080:3000 -it code-runner
 ```
 
 - If the terminal is not interactive, run the following command
